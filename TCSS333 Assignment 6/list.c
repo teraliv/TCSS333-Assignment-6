@@ -8,7 +8,6 @@
  */
 
 // Linked List ADT
-
 Node *createList(void) {
     return NULL;
 }
@@ -73,5 +72,3 @@ void freeList(List *list) {
         free(list);
     }
 }
-
-
