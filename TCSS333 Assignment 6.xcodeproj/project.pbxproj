@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45C70D421BFCDA190087053C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 45C70D411BFCDA190087053C /* main.c */; };
+		45C70D4D1BFE5F290087053C /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 45C70D4B1BFE5F290087053C /* list.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4553C2211BFF7F6F006B9164 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		45C70D3E1BFCDA190087053C /* TCSS333 Assignment 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TCSS333 Assignment 6"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C70D411BFCDA190087053C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		45C70D4B1BFE5F290087053C /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		45C70D4C1BFE5F290087053C /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 		45C70D351BFCDA190087053C = {
 			isa = PBXGroup;
 			children = (
+				4553C2211BFF7F6F006B9164 /* PrefixHeader.pch */,
 				45C70D401BFCDA190087053C /* TCSS333 Assignment 6 */,
 				45C70D3F1BFCDA190087053C /* Products */,
 			);
@@ -58,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				45C70D411BFCDA190087053C /* main.c */,
+				45C70D4B1BFE5F290087053C /* list.c */,
+				45C70D4C1BFE5F290087053C /* list.h */,
 			);
 			path = "TCSS333 Assignment 6";
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C70D421BFCDA190087053C /* main.c in Sources */,
+				45C70D4D1BFE5F290087053C /* list.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +215,7 @@
 		45C70D461BFCDA190087053C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = prefixHeader.pch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +223,7 @@
 		45C70D471BFCDA190087053C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = prefixHeader.pch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +247,7 @@
 				45C70D471BFCDA190087053C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
